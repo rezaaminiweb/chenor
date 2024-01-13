@@ -13,7 +13,7 @@
    <title>chenor</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
    <!-- start header -->
 
@@ -57,7 +57,7 @@
                      <i class="bi bi-list text-2xl" id="menulist"></i>
                   </a>
                   <ul id="ulli1"
-                     class=" duration-300 absolute bg-[#77905d] h-auto  top-[15%] left-[100%] w-[100vw]  z-50  pl-8 px-6  py-4 px-3">
+                     class=" duration-300 pr-10 absolute bg-[#77905d] h-auto  top-[15%] left-[100%] w-[100vw]  z-50  pl-8 px-6  py-4 px-3">
                      <li class="py-2">
                         <a href="#">محصولات</a>
                      </li>
@@ -81,13 +81,18 @@
                <!-- header socials -->
                <ul class="flex items-center gap-3 pr-4">
                   <li class="w-5 h-5  flex justify-center items-center ">
-                     <i class="bi bi-linkedin text-[white]   rounded-full overflow-hidden flex text-sm p-1"></i>
+                    <a href=""> <i class="bi bi-linkedin text-[white]   rounded-full overflow-hidden flex text-sm p-1"></i>
+                    </a>
                   </li>
                   <li class="w-5 h-5  flex justify-center items-center">
-                     <i class="bi bi-facebook text-sm text-white flex items-center"></i>
+                    <a href=""> <i class="bi bi-facebook text-sm text-white flex items-center"></i>
+                    </a>
                   </li>
                   <li class="rounded-full overflow-hidden w-4 h-4 flex justify-center items-center bg-white">
+                     <a href="">
                      <i class="bi bi-instagram text-xs flex items-center text-[#77905d] "></i>
+                     </a>
+                     
                   </li>
                </ul>
             </div>
@@ -100,10 +105,11 @@
             <!-- logo -->
             <div class="w-[150px] h-[40px]">
                <img src="./assets/logo.png" alt="logo" class="w-full h-full">
+               
             </div>
 
             <!-- header contact -->
-            <div class="flex flex-col lg:flex-row gap-8 my-10">
+            <div class="hidden  lg:flex flex-col lg:flex-row gap-8 my-10">
                <!-- header contact item -->
                <div class="flex items-center gap-2 pl-16 border-l  border-custom-charcoalLight">
                   <div
@@ -130,9 +136,9 @@
          </div>
       </div>
       <!-- navbar & button -->
-      <div class="py-6">
+      <div class="lg:py-6">
          <div class="container">
-            <div class="flex justify-between flex-col lg:flex-row items-center">
+            <div class="hidden  lg:flex justify-between flex-col lg:flex-row items-center">
                <!-- navbar -->
                <nav class="pr-0 lg:pr-14">
                   <ul class="flex items-center gap-4 lg:gap-8 text-custom-charcoalLight text-sm font-EstedadMedium">
@@ -167,8 +173,7 @@
 
    <!-- section one  -->
    <section class="">
-      <br>
-      <br>
+     
       <div class="relative w-full h-[40vh] lg:h-full  lg:h-full ">
          <img src="./assets/slider.jpg" alt="" class="w-full h-[40vh] lg:h-full  object-cover">
          <!-- slider infos -->
@@ -184,7 +189,7 @@
    </section>
 
    <!-- section two (about us) -->
-   <section class="py-10 px-10 lg:px-0">
+   <section class=" px-10 lg:py-10 lg:px-0">
       <br>
       <br>
       <div class="container grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -252,7 +257,7 @@
       <br><br>
       <hr>
    </div>
-   <section class="py-10">
+   <section class="py-10 ">
       <div>
          <!-- title -->
          <div class="font-EstedadBold text-custom-primary text-center mb-6 text-2xl">
@@ -265,13 +270,13 @@
          <br><br>
 
          <!-- product card slider -->
-         <div class="container">
-            <div class="swiper mySwiper " style="padding: 0px 50px; margin: 0px auto;">
-               <div class="swiper-wrapper  ">
+         <div class="container ">
+            <div class="swiper mySwiper   " style="padding: 0px 50px; margin: 0px auto;">
+               <div class="swiper-wrapper  w-full ">
 
                   <!-- product card item -->
                   <div
-                     class="swiper-slide relative  overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     class="swiper-slide  relative  overflow-hidden p-5 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
                      <!-- Sales number -->
                      <div class="w-full flex justify-end">
                         <div
@@ -299,7 +304,7 @@
                   </div>
                   <!-- product card item -->
                   <div
-                     class="swiper-slide relative  overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     class="swiper-slide relative  overflow-hidden p-5 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
                      <!-- Sales number -->
                      <div class="w-full flex justify-end">
                         <div
@@ -327,7 +332,7 @@
                   </div>
                   <!-- product card item -->
                   <div
-                     class="swiper-slide relative overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     class="swiper-slide relative overflow-hidden p-5 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
                      <!-- Sales number -->
                      <div class="w-full flex justify-end">
                         <div
@@ -355,7 +360,7 @@
                   </div>
                   <!-- product card item -->
                   <div
-                     class="swiper-slide relative overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     class="swiper-slide relative overflow-hidden p-5 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
                      <!-- Sales number -->
                      <div class="w-full flex justify-end">
                         <div
@@ -401,7 +406,8 @@
          <!-- achievement box -->
          <div class="container  ar ">
 
-            <div class=" absolute  top-11 lg:top-44 mr-0 lg:mr-14 bg-[#91aa77]  rounded-lg p-10  w-[90%] lg:w-[60vw] flex flex-col gap-12">
+            <div
+               class=" absolute top-11 lg:top-44  mr-0 lg:mr-14 bg-[#91aa77] rounded-lg p-10  w-full sm:w-[90%] md:w-[85%] lg:w-[60vw]  flex flex-col gap-10">
                <!-- title -->
                <div class="">
                   <h5 class="text-white">دستاوردها</h5>
@@ -467,10 +473,12 @@
    <!-- section five (gallery) -->
    <section class="bg-[#f6f7fc]">
       <br><br>
+      <br>
+      <br>
       <div class="container grid  grid-cols-1 lg:grid-cols-2 gap-10">
          <!-- right part -->
          <div class="">
-            <div class=" lg:w-[75%] w-[90%] mx-auto flex flex-col gap-4">
+            <div class=" lg:w-[60%] w-[90%] mx-auto flex flex-col gap-4 ">
                <h4 class="font-EstedadLight text-base text-custom-primary">صفحه رسمی ما را</h4>
                <h5 class="font-EstedadBold text-xl text-custom-secondary font-black" style="">در اینستاگرام دنبال
                   کنید...</h5>
@@ -489,8 +497,9 @@
          </div>
          <!-- left part -->
          <div class=" relative ">
-            <img src="./assets/gallery.png" alt="gallery">
-            <img src="assets/mobil copy.png" class="absolute right-[20%] lg:right-[-24%]  top-[50%] lg:top-0 w-28 lg:w-36" alt="">
+            <img src="./assets/gallery.png" class="w-full sm:w-[85%] md:w-[70%] lg:w-auto mx-auto" alt="gallery">
+            <img src="assets/mobil copy.png"
+               class="absolute right-[20%] lg:right-[-24%]  top-[50%] lg:top-0 w-24 lg:w-32" alt="">
          </div>
          <br><br>
       </div>
@@ -524,7 +533,8 @@
 
 
          <div class="flex flex-col lg:flex-row justify-around px-5 lg:px-20">
-            <div class="w-full lg:w-[30%] ">
+            <div class="w-full md:w-[60%] lg:w-[30%] mx-auto ">
+               <a href="">
                <figure>
                   <img src="assets/news1.png" alt="">
                   <figcaption class="mt-5 text-[#28245b] text-md">
@@ -537,9 +547,11 @@
                      </p>
                   </figcaption>
                </figure>
+            </a>
             </div>
 
-            <div class="w-full lg:w-[30%] lg:mx-10 my-10 lg:my-0">
+            <div class="w-full lg:w-[30%] lg:mx-10 my-10 lg:my-0 md:w-[60%] mx-auto">
+               <a href="">
                <figure>
                   <img src="assets/news2.png" alt="">
                   <figcaption class="mt-5 text-[#28245b] text-md">
@@ -552,8 +564,10 @@
                      </p>
                   </figcaption>
                </figure>
+            </a>
             </div>
-            <div class="w-full lg:w-[30%]">
+            <div class="w-full lg:w-[30%]  md:w-[60%] mx-auto">
+               <a href="">
                <figure>
                   <img src="assets/news3.png" alt="">
                   <figcaption class="mt-5 text-[#28245b] text-md">
@@ -565,6 +579,7 @@
                      </p>
                   </figcaption>
                </figure>
+            </a>
             </div>
          </div>
       </div>
@@ -573,19 +588,25 @@
       <div class="relative">
 
          <div class=" relative z-40">
-            <div class="w-[70%] bg-[#222256] absolute">
+            <div class="w-full lg:w-[70%]   bg-[#222256] absolute">
                <div class=" py-10 px-10">
                   <div class="flex flex-col lg:flex-row items-center justify-around ">
-                     <div class="w-[50%] mr-32">
-                        <p class="text-white flex  lg:w-[60%] lg:text-2xl">
+                     <div class=" w-[70%]  flex justify-center lg:mr-32 mb-5 lg:mb-0">
+                        <p class="text-white flex text-lg  lg:w-[60%] lg:text-2xl">
                            اشتراک ایمیل جدید خود برای خبرنامه
                         </p>
                      </div>
                      <div>
-                        <div class="flex justify-center items-center rounded-2xl overflow-hidden">
-                           <input type="text" placeholder="ایمیل خود را وارد نمایید ..." class="outline-none py-3 px-5">
-                           <i class="bi bi-envelope text-white px-8 lg:text-2xl
-                        py-2 bg-[#8a9d77]"></i>
+                        <div class="flex  items-center rounded-2xl overflow-hidden">
+                           <div class="">
+                              <input type="text" placeholder="ایمیل خود را وارد نمایید ..."
+                                 class=" outline-none py-2 placeholder:text-lg px-3 lg:py-3 lg:px-5">
+                              
+                           </div>
+                           <div>
+                              <i class="bi bi-envelope flex items-center text-white px-8 lg:text-2xl
+                        py-3 lg:py-3 bg-[#8a9d77]"></i>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -601,15 +622,15 @@
       <br><br><br>
       <div class="w-full bg-[#8a9d77] relative">
          <div class="container">
-            <div class="py-36 flex justify-between text-white">
-               <ul>
+            <div class="py-36 px-3 flex flex-wrap lg:flex-row justify-between text-base text-white">
+               <ul class="w-[50%] lg:w-auto">
                   <li>
                      <figure class="">
-                        <img src="assets/logo3.png" class="h-10" alt="">
+                        <img src="assets/logo3.png" class="h-7 lg:h-10" alt="">
                      </figure>
                   </li>
                </ul>
-               <ul>
+               <ul class="w-[50%] lg:w-auto">
                   <li class="mb-7"><a href="" class="font-bold">
                         لینک های مفید
 
@@ -622,7 +643,7 @@
                   <li class="my-3"><a href=""> اخبار</a></li>
                   <li class="my-3"><a href="">مخاطب</a></li>
                </ul>
-               <ul>
+               <ul class="w-[50%] lg:w-auto mt-8 lg:mt-0">
                   <li class="mb-7"><a href="" class="font-bold">
                         مشتریان
 
@@ -633,7 +654,7 @@
                   <li class="my-3"><a href=""> قیمت گذاری </a></li>
                   <li class="my-3"><a href="">حمایت کردن </a></li>
                </ul>
-               <ul>
+               <ul class="w-[50%] lg:w-auto mt-8 lg:mt-0" >
                   <li class="mb-7"><a href="" class="font-bold">
                         آدرس
 
@@ -642,9 +663,15 @@
                   <li class="my-3">ایران تهران</li>
                   <li class="my-3 flex">
                      <figure class=" flex">
+                        <a href="">
                         <img src="assets/facebook logo .png" class="h-10" alt="">
+                     </a>
+                     <a href="">
                         <img src="assets/linkdin logo .png" class="h-10 mx-2" alt="">
+                     </a>
+                     <a href="">
                         <img src="assets/insta logo .png" class="h-10 " alt="">
+                     </a>
                      </figure>
                </ul>
 
@@ -671,6 +698,7 @@
 
 
       var swiper = new Swiper(".mySwiper", {
+         
          slidesPerView: 1,
          spaceBetween: 100,
          autoplay: {
@@ -683,12 +711,12 @@
          },
          breakpoints: {
             640: {
-               slidesPerView: 2,
-               spaceBetween: 20,
+               slidesPerView: 1,
+               spaceBetween: 50,
             },
             768: {
-               slidesPerView: 2,
-               spaceBetween: 40,
+               slidesPerView: 1,
+               spaceBetween:60,
             },
             1024: {
                slidesPerView: 3,

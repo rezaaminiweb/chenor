@@ -71,7 +71,7 @@
         
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .achievement {
       background-image: none;
     }
@@ -82,9 +82,9 @@
   #radius{
     border-radius: 0px 0px 50% 50%;
   }
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 1024px) {
     #radius{
-        border-radius: none;
+        border-radius: 5px 5px 5px 5px;
     }
     
   }
