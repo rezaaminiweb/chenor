@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --swiper-navigation-size: 30px;
+    --swiper-theme-color: #aaa5a5;
+}
+@layer base {
+    @font-face {
+        font-family: "Shabnam Thin";
+        src: url("../fonts/Shabnam-Thin-FD.ttf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Shabnam Medium";
+        src: url("../fonts/Shabnam-Medium-FD.ttf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Shabnam Bold";
+        src: url("../fonts/Shabnam-Bold-FD.ttf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Estedad Light";
+        src: url("../fonts/Estedad-Light.ttf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Estedad Medium";
+        src: url("../fonts/Estedad-Medium.ttf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Estedad Bold";
+        src: url("../fonts/Estedad-Bold.ttf");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "estefadeh1";
+        src: url("../public/fonts/Estedad-Black.ttf");
+        font-display: swap;
+    }
+
+    body {
+        @apply font-EstedadMedium
+    }
+}
+
+@layer components {
+    .btn {
+        @apply bg-custom-secondary text-white rounded-md px-8 py-4 text-xs font-EstedadMedium
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-button-next{
+        
+    }
+    .swiper-button-prev{
+
+    }
+
+    .achievement{
+        background-image: url(../assets/bg.jpg);
+        background-size:  40vw;
+        background-repeat: no-repeat;
+        background-position: top right;
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    .achievement {
+      background-image: none;
+    }
+  }
+
+  
+  
+  #radius{
+    border-radius: 0px 0px 50% 50%;
+  }
+@media only screen and (max-width : 600px) {
+    #radius{
+        border-radius: none;
+    }
+    
+  }
+

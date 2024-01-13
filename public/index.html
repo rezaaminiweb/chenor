@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./styles/output.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <title>chenor</title>
+</head>
+
+<body>
+
+   <!-- start header -->
+
+   <header>
+      <!-- topbar -->
+      <div class="bg-custom-primary  w-full text-xs text-white font-EstedadMedium">
+         <div class="container py-5 h-full text-xs lg:flex justify-between items-center">
+            <!-- right part -->
+            <div class="flex  items-center justify-center  lg:my-0 mb-7 gap-4  h-full ">
+               <div class="flex items-center  gap-2">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>تهران، سعادت آباد، میدان کالج</span>
+               </div>
+               <div class="flex items-center  gap-2">
+                  <i class="bi bi-telephone-fill"></i>
+                  <span dir="ltr">0901 8282 509</span>
+               </div>
+            </div>
+            <!-- left part -->
+            <div class="flex items-center justify-between gap-4 px-7">
+               <!-- topbar list -->
+               <ul class="hidden lg:flex gap-4 h-full border-l-2 pl-8">
+                  <li>
+                     <a href="#">محصولات</a>
+                  </li>
+                  <li>
+                     <a href="#">اخبار و رسانه ها</a>
+                  </li>
+                  <li>
+                     <a href="#">مشاغل</a>
+                  </li>
+                  <li>
+                     <a href="#">قیمت گذاری</a>
+                  </li>
+                  <li>
+                     <a href="#">ارسال محصول</a>
+                  </li>
+               </ul>
+               <div class="lg:hidden">
+                  <a href="#" onclick="clickme(event)">
+                     <i class="bi bi-list text-2xl" id="menulist"></i>
+                  </a>
+                  <ul id="ulli1"
+                     class=" duration-300 absolute bg-[#77905d] h-auto  top-[15%] left-[100%] w-[100vw]  z-50  pl-8 px-6  py-4 px-3">
+                     <li class="py-2">
+                        <a href="#">محصولات</a>
+                     </li>
+                     <li class="py-2">
+                        <a href="#">اخبار و رسانه ها</a>
+                     </li>
+                     <li class="py-2">
+                        <a href="#">مشاغل</a>
+                     </li>
+                     <li class="py-2">
+                        <a href="#">قیمت گذاری</a>
+                     </li>
+                     <li class="py-2">
+                        <a href="#">ارسال محصول</a>
+                     </li>
+
+
+                  </ul>
+               </div>
+
+               <!-- header socials -->
+               <ul class="flex items-center gap-3 pr-4">
+                  <li class="w-5 h-5  flex justify-center items-center ">
+                     <i class="bi bi-linkedin text-[white]   rounded-full overflow-hidden flex text-sm p-1"></i>
+                  </li>
+                  <li class="w-5 h-5  flex justify-center items-center">
+                     <i class="bi bi-facebook text-sm text-white flex items-center"></i>
+                  </li>
+                  <li class="rounded-full overflow-hidden w-4 h-4 flex justify-center items-center bg-white">
+                     <i class="bi bi-instagram text-xs flex items-center text-[#77905d] "></i>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- header infos -->
+      <div class="border-b">
+         <div class="container py-8 flex flex-col items-center justify-center lg:flex-row justify-between">
+
+            <!-- logo -->
+            <div class="w-[150px] h-[40px]">
+               <img src="./assets/logo.png" alt="logo" class="w-full h-full">
+            </div>
+
+            <!-- header contact -->
+            <div class="flex flex-col lg:flex-row gap-8 my-10">
+               <!-- header contact item -->
+               <div class="flex items-center gap-2 pl-16 border-l  border-custom-charcoalLight">
+                  <div
+                     class="w-[50px] h-[50px] flex items-center justify-center text-custom-primaryLight p-3 border-[1px] border-custom-charcoalLight rounded-md">
+                     <i class="bi bi-telephone-fill flex justify-center items-center"></i>
+                  </div>
+                  <div class="flex flex-col text-sm ">
+                     <span class="text-base text-custom-secondary">تماس با ما</span>
+                     <span dir="ltr" class="text-custom-charcoal">0901 8282 509</span>
+                  </div>
+               </div>
+               <!-- header contact item -->
+               <div class="flex items-center gap-2 pl-16 border-l border-custom-charcoalLight">
+                  <div
+                     class="w-[50px] h-[50px] flex items-center justify-center text-custom-primaryLight p-3 border border-custom-charcoalLight rounded-md">
+                     <i class="bi bi-envelope flex justify-center items-center text-xl"></i>
+                  </div>
+                  <div class="flex flex-col text-sm ">
+                     <span class="text-base text-custom-secondary">ایمیل</span>
+                     <span dir="ltr" class="text-custom-charcoal">info@chenor.woodworks</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- navbar & button -->
+      <div class="py-6">
+         <div class="container">
+            <div class="flex justify-between flex-col lg:flex-row items-center">
+               <!-- navbar -->
+               <nav class="pr-0 lg:pr-14">
+                  <ul class="flex items-center gap-4 lg:gap-8 text-custom-charcoalLight text-sm font-EstedadMedium">
+                     <li class="hover:text-custom-secondary transition">
+                        <a href="#">خانه</a>
+                     </li>
+                     <li class="hover:text-custom-secondary transition">
+                        <a href="#">درباره ما</a>
+                     </li>
+                     <li class="hover:text-custom-secondary transition">
+                        <a href="#">محصولات</a>
+                     </li>
+                     <li class="hover:text-custom-secondary transition">
+                        <a href="#">نمونه کارها</a>
+                     </li>
+                     <li class="hover:text-custom-secondary transition">
+                        <a href="#">اخبار</a>
+                     </li>
+                     <li class="hover:text-custom-secondary transition">
+                        <a href="#">مخاطبین</a>
+                     </li>
+                  </ul>
+               </nav>
+
+               <!-- comment button -->
+               <button class="btn mt-10 lg:mt-0">نظر خود را ثبت کنید</button>
+            </div>
+         </div>
+      </div>
+   </header>
+
+
+   <!-- section one  -->
+   <section class="">
+      <br>
+      <br>
+      <div class="relative w-full h-[40vh] lg:h-full  lg:h-full ">
+         <img src="./assets/slider.jpg" alt="" class="w-full h-[40vh] lg:h-full  object-cover">
+         <!-- slider infos -->
+         <div class="absolute z-20  text-white right-[15%] top-[10%]">
+            <h1 class="font-EstedadBold text-2xl text-base lg:text-5xl bg-custom-primary/50 p-2 lg:p-4 w-fit">لرنینگ
+               تاور،
+               کیچن هلپر</h1>
+            <h4 class="font-EstedadBold text-lg text-sm lg:text-2xl bg-custom-primary/50 p-4 w-fit">پرکاربرد جهت
+               استفاده کودک در آشپزخانه</h4>
+            <button class="btn mt-5 lg:mt-7">مشاهده بیشتر</button>
+         </div>
+      </div>
+   </section>
+
+   <!-- section two (about us) -->
+   <section class="py-10 px-10 lg:px-0">
+      <br>
+      <br>
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-5">
+         <!-- right part -->
+         <div class="flex flex-col gap-6">
+            <h4 class="flex flex-col text-custom-primary font-EstedadBold text-lg">
+               <span class="font-EstedadMedium">کاری که</span>
+               <span class=" font-EstedadBold text">ما انجام میدیم</span>
+               <span class="text-custom-secondary font-bold text-2xl " style="">ما گروه چنــور هستیم</span>
+            </h4>
+            <p class="text-sm text-custom-charcoal  leading-7">ما یک گروه 4 نفره از دوستان قدیمی هستیم که از ابتدای سال
+               1399 کارمون
+               رو شروع کردیم. در این پنج سال در حوزه های مختلفی در کارمان فعالیت داشتیم اعم از طراحی و ساخت لوازم چوبی
+               خانه وآشپزخانه که بیشتر شامل اکسسوری های کاربردی میشود و همینطور محصولات مربوط به کودک و مونته سوری علاوه
+               بر اینها، تجربه برگزاری کارگاه های یک روزه هم داریم که شبیه به همین تجربه است. در این دیدار تجربیات و
+               لذتی که از کار با چوب بردیم را به شما منتقل میکنیم</p>
+
+            <!-- list of our works -->
+            <br>
+            <div class="grid grid-cols-2 justify-start items-start gap-2">
+               <!-- item -->
+               <div class="flex items-center justify-start  gap-2">
+                  <div class=" text-custom-primary">
+                     <i class="bi bi-arrow-left text-xl"></i>
+                  </div>
+                  <span class="text-sm text-custom-charcoal">لرنینگ تاور</span>
+               </div>
+               <!-- item -->
+               <div class="flex items-center justify-start gap-2">
+                  <div class=" text-custom-primary">
+                     <i class="bi bi-arrow-left text-xl"></i>
+                  </div>
+                  <span class="text-sm text-custom-charcoal">میز و صندلی مونته سوری</span>
+               </div>
+               <!-- item -->
+               <div class="flex items-center justify-start gap-2">
+                  <div class=" text-custom-primary">
+                     <i class="bi bi-arrow-left text-xl"></i>
+                  </div>
+                  <span class="text-sm text-custom-charcoal">مبلمان کودک</span>
+               </div>
+               <!-- item -->
+               <div class="flex items-center justify-start gap-2">
+                  <div class=" text-custom-primary">
+                     <i class="bi bi-arrow-left text-xl"></i>
+                  </div>
+                  <span class="text-sm text-custom-charcoal">لوازم آشپزخانه</span>
+               </div>
+               <br>
+            </div>
+         </div>
+         <!-- left part -->
+         <div class="relative flex justify-end">
+            <img src="./assets/section-two.jpg" alt="about us" class="w-[350px]">
+            <div class="absolute right-[20%] bottom-5 flex flex-col  bg-custom-primary rounded-md text-white p-5">
+               <span>پنج سال تجربه از ما</span>
+               <span dir="" class="  ms-14 mt-3">و حمایت از شما</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- section three (product cards) -->
+   <div class="container">
+      <br><br>
+      <hr>
+   </div>
+   <section class="py-10">
+      <div>
+         <!-- title -->
+         <div class="font-EstedadBold text-custom-primary text-center mb-6 text-2xl">
+            <h4 class="text-lg">تخصص ما</h4>
+            <h5 class="mt-2">
+               <span class="font-EstedadBold " style="">تنوع</span>
+               <span class="text-custom-secondary ">محصولات ما</span>
+            </h5>
+         </div>
+         <br><br>
+
+         <!-- product card slider -->
+         <div class="container">
+            <div class="swiper mySwiper " style="padding: 0px 50px; margin: 0px auto;">
+               <div class="swiper-wrapper  ">
+
+                  <!-- product card item -->
+                  <div
+                     class="swiper-slide relative  overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     <!-- Sales number -->
+                     <div class="w-full flex justify-end">
+                        <div
+                           class=" rounded-full bg-white flex flex-col justify-center items-center gap-1 p-3 w-[70px] h-[70px] text-sm text-custom-primary text-end">
+                           <span dir="ltr">+100k</span>
+                           <span class="group-hover:text-custom-secondary">فروش</span>
+                        </div>
+                     </div>
+                     <!-- product infos -->
+                     <div class="z-50 flex flex-col gap-5 group-hover:text-white">
+                        <img src="./assets/icon1.svg" alt="" class="w-[30px] text-custom-primary">
+                        <h3 class="text-2xl font-EstedadBold">لرنینگ تاور</h3>
+                        <p class="text-sm text-justify">لرنینگ تاور (برج یادگیری) رو میتونید در 3 طرح متفاوت سفارش بدید.
+                           همینطور میتونید اجزای طرح رو هم انتخاتب یا ترکیب کنید تا به مدلی که بیشتر از همه مناسب
+                           نیازهاتون هست برسید</p>
+                        <div class="flex justify-end">
+                           <button
+                              class="bg-custom-primary py-2 px-6 rounded-md w-fit text-xs text-white group-hover:bg-[#eeeeee] group-hover:text-black">مشاهده
+                              بیشتر</button>
+                        </div>
+                     </div>
+                     <div
+                        class="absolute -right-[120%] -bottom-[38%] w-[150%] h-[150%] bg-transparent/10 rotate-[20deg]">
+                     </div>
+                  </div>
+                  <!-- product card item -->
+                  <div
+                     class="swiper-slide relative  overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     <!-- Sales number -->
+                     <div class="w-full flex justify-end">
+                        <div
+                           class=" rounded-full bg-white flex flex-col justify-center items-center gap-1 p-3 w-[70px] h-[70px] text-sm text-custom-primary text-end">
+                           <span dir="ltr">+100k</span>
+                           <span class="group-hover:text-custom-secondary">فروش</span>
+                        </div>
+                     </div>
+                     <!-- product infos -->
+                     <div class="z-50 flex flex-col gap-5 group-hover:text-white">
+                        <img src="./assets/icon1.svg" alt="" class="w-[30px] text-custom-primary">
+                        <h3 class="text-2xl font-EstedadBold">لرنینگ تاور</h3>
+                        <p class="text-sm text-justify">لرنینگ تاور (برج یادگیری) رو میتونید در 3 طرح متفاوت سفارش بدید.
+                           همینطور میتونید اجزای طرح رو هم انتخاتب یا ترکیب کنید تا به مدلی که بیشتر از همه مناسب
+                           نیازهاتون هست برسید</p>
+                        <div class="flex justify-end">
+                           <button
+                              class="bg-custom-primary py-2 px-6 rounded-md w-fit text-xs text-white group-hover:bg-[#eeeeee] group-hover:text-black">مشاهده
+                              بیشتر</button>
+                        </div>
+                     </div>
+                     <div
+                        class="absolute -right-[120%] -bottom-[38%] w-[150%] h-[150%] bg-transparent/10 rotate-[20deg]">
+                     </div>
+                  </div>
+                  <!-- product card item -->
+                  <div
+                     class="swiper-slide relative overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     <!-- Sales number -->
+                     <div class="w-full flex justify-end">
+                        <div
+                           class=" rounded-full bg-white flex flex-col justify-center items-center gap-1 p-3 w-[70px] h-[70px] text-sm text-custom-primary text-end">
+                           <span dir="ltr">+100k</span>
+                           <span class="group-hover:text-custom-secondary">فروش</span>
+                        </div>
+                     </div>
+                     <!-- product infos -->
+                     <div class="z-50 flex flex-col gap-5 group-hover:text-white">
+                        <img src="./assets/icon1.svg" alt="" class="w-[30px] text-custom-primary">
+                        <h3 class="text-2xl font-EstedadBold">لرنینگ تاور</h3>
+                        <p class="text-sm text-justify">لرنینگ تاور (برج یادگیری) رو میتونید در 3 طرح متفاوت سفارش بدید.
+                           همینطور میتونید اجزای طرح رو هم انتخاتب یا ترکیب کنید تا به مدلی که بیشتر از همه مناسب
+                           نیازهاتون هست برسید</p>
+                        <div class="flex justify-end">
+                           <button
+                              class="bg-custom-primary py-2 px-6 rounded-md w-fit text-xs text-white group-hover:bg-[#eeeeee] group-hover:text-black">مشاهده
+                              بیشتر</button>
+                        </div>
+                     </div>
+                     <div
+                        class="absolute -right-[120%] -bottom-[38%] w-[150%] h-[150%] bg-transparent/10 rotate-[20deg]">
+                     </div>
+                  </div>
+                  <!-- product card item -->
+                  <div
+                     class="swiper-slide relative overflow-hidden p-8 bg-[#eeeeee] rounded-lg flex flex-col gap-14 group hover:bg-custom-primaryLight cursor-pointer transition-all">
+                     <!-- Sales number -->
+                     <div class="w-full flex justify-end">
+                        <div
+                           class=" rounded-full bg-white flex flex-col justify-center items-center gap-1 p-3 w-[70px] h-[70px] text-sm text-custom-primary text-end">
+                           <span dir="ltr">+100k</span>
+                           <span class="group-hover:text-custom-secondary">فروش</span>
+                        </div>
+                     </div>
+                     <!-- product infos -->
+                     <div class="z-50 flex flex-col gap-5 group-hover:text-white">
+                        <img src="./assets/icon1.svg" alt="" class="w-[30px] text-custom-primary">
+                        <h3 class="text-2xl font-EstedadBold">لرنینگ تاور</h3>
+                        <p class="text-sm text-justify">لرنینگ تاور (برج یادگیری) رو میتونید در 3 طرح متفاوت سفارش بدید.
+                           همینطور میتونید اجزای طرح رو هم انتخاتب یا ترکیب کنید تا به مدلی که بیشتر از همه مناسب
+                           نیازهاتون هست برسید</p>
+                        <div class="flex justify-end">
+                           <button
+                              class="bg-custom-primary py-2 px-6 rounded-md w-fit text-xs text-white group-hover:bg-[#eeeeee] group-hover:text-black">مشاهده
+                              بیشتر</button>
+                        </div>
+                     </div>
+                     <div
+                        class="absolute -right-[120%] -bottom-[38%] w-[150%] h-[150%] bg-transparent/10 rotate-[20deg]">
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+            </div>
+         </div>
+      </div>
+      <br><br>
+
+   </section>
+
+   <!-- section four (achievement) -->
+
+   <section class="achievement  bg-[#f6f7fc] " style="">
+
+      <section class="bg-white achievement relative w-full h-[70vh] rounded-none " style=" " id="radius">
+
+
+         <!-- achievement box -->
+         <div class="container  ar ">
+
+            <div class=" absolute  top-11 lg:top-44 mr-0 lg:mr-14 bg-[#91aa77]  rounded-lg p-10  w-[90%] lg:w-[60vw] flex flex-col gap-12">
+               <!-- title -->
+               <div class="">
+                  <h5 class="text-white">دستاوردها</h5>
+                  <h4 class="flex flex-col text-custom-secondary text-lg lg:text-2xl font-EstedadBold">
+                     <span class="" style="">ما بهترین</span>
+                     <span>صنعتگران هستیم</span>
+                  </h4>
+               </div>
+
+               <!-- achievment card items -->
+               <div class="flex justify-between items-center text-base lg:text-xl">
+
+                  <!-- achievment card item -->
+                  <div>
+                     <!-- achievment number -->
+                     <div class="flex items-center ">
+                        <span class="text-white">+</span>
+                        <span class="text-custom-secondary ">600</span>
+                     </div>
+                     <!-- achievment name -->
+                     <div class="font-EstedadMedium text-white ">پروژه ها</div>
+                  </div>
+
+                  <!-- achievment card item -->
+                  <div>
+                     <!-- achievment number -->
+                     <div class="flex items-center ">
+                        <span class="text-white">+</span>
+                        <span class="text-custom-secondary">600</span>
+                     </div>
+                     <!-- achievment name -->
+                     <div class="font-EstedadMedium text-white ">مشتریان</div>
+                  </div>
+
+                  <!-- achievment card item -->
+                  <div>
+                     <!-- achievment number -->
+                     <div class="flex items-center ">
+                        <span class="text-white">+</span>
+                        <span class="text-custom-secondary">600</span>
+                     </div>
+                     <!-- achievment name -->
+                     <div class="font-EstedadMedium text-white">مشتریان</div>
+                  </div>
+
+                  <!-- achievment card item -->
+                  <div>
+                     <!-- achievment number -->
+                     <div class="flex items-center ">
+                        <span class="text-white">+</span>
+                        <span class="text-custom-secondary">600</span>
+                     </div>
+                     <!-- achievment name -->
+                     <div class="font-EstedadMedium text-white ">مشتریان</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+   </section>
+
+   <!-- section five (gallery) -->
+   <section class="bg-[#f6f7fc]">
+      <br><br>
+      <div class="container grid  grid-cols-1 lg:grid-cols-2 gap-10">
+         <!-- right part -->
+         <div class="">
+            <div class=" lg:w-[75%] w-[90%] mx-auto flex flex-col gap-4">
+               <h4 class="font-EstedadLight text-base text-custom-primary">صفحه رسمی ما را</h4>
+               <h5 class="font-EstedadBold text-xl text-custom-secondary font-black" style="">در اینستاگرام دنبال
+                  کنید...</h5>
+               <p class="text-custom-charcoalLight text-sm text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                  از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                  که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                  باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                  نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                  ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
+                  پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+                  طراحی اساسا مورد استفاده قرار گیرد.</p>
+               <div class="flex justify-start ">
+                  <button class="bg-custom-primary rounded-md mt-6 text-white text-sm py-4 px-8">مشاهده گالری</button>
+               </div>
+            </div>
+         </div>
+         <!-- left part -->
+         <div class=" relative ">
+            <img src="./assets/gallery.png" alt="gallery">
+            <img src="assets/mobil copy.png" class="absolute right-[20%] lg:right-[-24%]  top-[50%] lg:top-0 w-28 lg:w-36" alt="">
+         </div>
+         <br><br>
+      </div>
+
+      <div>
+         <br>
+         <br>
+         <br>
+         <hr>
+      </div>
+      <br><br><br>
+
+      <div class=" flex justify-center text-xl lg:text-3xl  font-bold">
+
+         <p class="text-[#8a9d77] ">
+            اخبار
+         </p>
+
+      </div>
+      <br>
+
+      <div class="flex justify-center text-xl lg:text-2xl font-bold">
+         <h4 class="text-[#8a9d77]">
+            اخبار <span class="text-[#28245b]">و مقــالات</span>
+         </h4>
+      </div>
+      <br>
+      <br>
+
+      <div class="container">
+
+
+         <div class="flex flex-col lg:flex-row justify-around px-5 lg:px-20">
+            <div class="w-full lg:w-[30%] ">
+               <figure>
+                  <img src="assets/news1.png" alt="">
+                  <figcaption class="mt-5 text-[#28245b] text-md">
+
+                     <p class="font-EstedadBold"> چگــونه همه‌گیری ویروس کرونا انتشـــار کربـن را کاهش داد - در پنج
+                        نمودار
+                     </p>
+                     <p class="text-[#8a9d77] mt-3">
+                        30 اردیبهشت 1402
+                     </p>
+                  </figcaption>
+               </figure>
+            </div>
+
+            <div class="w-full lg:w-[30%] lg:mx-10 my-10 lg:my-0">
+               <figure>
+                  <img src="assets/news2.png" alt="">
+                  <figcaption class="mt-5 text-[#28245b] text-md">
+
+                     <p class="font-EstedadBold"> انتشار کربن پس از افت همه‌گیری کووید به سرعت بازگشت
+                     </p>
+
+                     <p class="text-[#8a9d77] mt-3">
+                        20 اردیبهشت 1402
+                     </p>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="w-full lg:w-[30%]">
+               <figure>
+                  <img src="assets/news3.png" alt="">
+                  <figcaption class="mt-5 text-[#28245b] text-md">
+
+                     <p class="font-EstedadBold"> از چکرز تا شطرنج: استفاده از درس های علوم اجتماعی تا سازگاری با آتش.
+                     </p>
+                     <p class="text-[#8a9d77] mt-3">
+                        30 اردیبهشت 1402
+                     </p>
+                  </figcaption>
+               </figure>
+            </div>
+         </div>
+      </div>
+      <br><br>
+      <br><br>
+      <div class="relative">
+
+         <div class=" relative z-40">
+            <div class="w-[70%] bg-[#222256] absolute">
+               <div class=" py-10 px-10">
+                  <div class="flex flex-col lg:flex-row items-center justify-around ">
+                     <div class="w-[50%] mr-32">
+                        <p class="text-white flex  lg:w-[60%] lg:text-2xl">
+                           اشتراک ایمیل جدید خود برای خبرنامه
+                        </p>
+                     </div>
+                     <div>
+                        <div class="flex justify-center items-center rounded-2xl overflow-hidden">
+                           <input type="text" placeholder="ایمیل خود را وارد نمایید ..." class="outline-none py-3 px-5">
+                           <i class="bi bi-envelope text-white px-8 lg:text-2xl
+                        py-2 bg-[#8a9d77]"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+            </div>
+
+         </div>
+      </div>
+      </div>
+      <br><br><br>
+      <div class="w-full bg-[#8a9d77] relative">
+         <div class="container">
+            <div class="py-36 flex justify-between text-white">
+               <ul>
+                  <li>
+                     <figure class="">
+                        <img src="assets/logo3.png" class="h-10" alt="">
+                     </figure>
+                  </li>
+               </ul>
+               <ul>
+                  <li class="mb-7"><a href="" class="font-bold">
+                        لینک های مفید
+
+                     </a>
+                  </li>
+                  <li class="my-3"><a href="">صفحه اصلی </a></li>
+                  <li class="my-3"><a href=""> درباره </a></li>
+                  <li class="my-3"><a href=""> سرویس</a></li>
+                  <li class="my-3"><a href="">نمونه کارها </a></li>
+                  <li class="my-3"><a href=""> اخبار</a></li>
+                  <li class="my-3"><a href="">مخاطب</a></li>
+               </ul>
+               <ul>
+                  <li class="mb-7"><a href="" class="font-bold">
+                        مشتریان
+
+                     </a>
+                  </li>
+                  <li class="my-3"><a href="">اخبار و رسانه ها </a></li>
+                  <li class="my-3"><a href=""> مشاغل</a></li>
+                  <li class="my-3"><a href=""> قیمت گذاری </a></li>
+                  <li class="my-3"><a href="">حمایت کردن </a></li>
+               </ul>
+               <ul>
+                  <li class="mb-7"><a href="" class="font-bold">
+                        آدرس
+
+                     </a>
+                  </li>
+                  <li class="my-3">ایران تهران</li>
+                  <li class="my-3 flex">
+                     <figure class=" flex">
+                        <img src="assets/facebook logo .png" class="h-10" alt="">
+                        <img src="assets/linkdin logo .png" class="h-10 mx-2" alt="">
+                        <img src="assets/insta logo .png" class="h-10 " alt="">
+                     </figure>
+               </ul>
+
+            </div>
+
+         </div>
+         <span class="absolute bottom-0 left-0 w-full h-16 bg-[#28245b] flex">
+
+         </span>
+
+      </div>
+
+
+
+
+
+
+
+   </section>
+
+   <script src="./scripts/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
+
+
+      var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 100,
+         autoplay: {
+            delay: 5000,
+         },
+
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+         breakpoints: {
+            640: {
+               slidesPerView: 2,
+               spaceBetween: 20,
+            },
+            768: {
+               slidesPerView: 2,
+               spaceBetween: 40,
+            },
+            1024: {
+               slidesPerView: 3,
+               spaceBetween: 50,
+            },
+         },
+      });
+   </script>
+</body>
+
+</html>
+
+
+<!-- <i class="fa-solid fa-user"></i> -->
